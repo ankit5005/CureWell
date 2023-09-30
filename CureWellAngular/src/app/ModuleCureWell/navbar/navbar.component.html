@@ -1,0 +1,36 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<nav class="navbar navbar-expand-lg   ">
+    <div class="container-fluid">
+      <a class ="navbar-brand abc"routerLink="landing-page">CureWell</a>
+      <i id="icon1" class="fa-solid fa-hospital" style=" font-size: 35px; color: aliceblue;"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="landing-page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="view-doctor">View Doctors</a>
+          </li>
+        
+          <li class="nav-item" >
+            <a class="nav-link " routerLink="view-specialization" tabindex="-1" aria-disabled="true ">View Specialization</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true ">View Today's Surgery</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true ">Add Doctor</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a routerLink="login" class = "btn btn-outline-success" type="submit" style="color: rgb(0, 0, 0); background-color: aliceblue;">Login/Sign Up></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,24 @@
+
+<div>
+    <form [formGroup]="UpdateForm" (ngSubmit)="onSubmit()">
+        <div class="">
+          <label for="id" >Doctor Id:</label>
+          <input type="text" id="id"  class="form-control" formControlName="DoctorId" [(ngModel)]="id" readonly>
+          <span    *ngIf="DoctorId && DoctorId.invalid && DoctorId.touched" style="color: rgb(255, 44, 41);" >
+         *This Field is Required*
+          </span>
+        </div>
+        <div class="">
+          <label for="password">Doctor Name:</label>
+          <input type="text" id="nameDoctor" class="form-control" [(ngModel)]="name" formControlName="DoctorName"   >
+        </div>
+        <span *ngIf="DoctorName && DoctorName.invalid && DoctorName.touched"  style="color: rgb(255, 44, 41);">
+            *Name is Required*
+             </span>
+        <div>
+            <br>
+        <button type="submit" class="btn btn-primary" (click)="updateData(name,id)">Update</button>
+    </div>
+   
+    </form>
+</div>

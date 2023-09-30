@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* This ensures the container takes the full viewport height */
+    position: relative;
+    top: 80px; 
+    width: 100%; /* Set the width of the container */
+    height: auto; /* Set the height of the container */
+    background-color: rgb(251, 251, 251);
+}
+.center-div {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Set the width of the container */
+    height: auto; /* Set the height of the container */
+    
+}
+     /* Optional: Center-align text inside the div */
+
+     
+     #title1{
+        position: relative;
+        top: 55px; 
+     }
+     table {
+        width: 100%; /* Set the width of the table (percentage or pixel value) */
+        height: 100px; /* Set the height of the table (pixel value) */
+        border-collapse: collapse; /* Optional: Collapsing borders for the table */
+        
+
+        
+    }
+    button{
+       
+      background-color: rgb(225, 225, 225);
+        color: rgb(2, 2, 2); /* Button text color */
+        border: none;
+        border-radius: 3px; /* Rounded corners for the button */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow properties */
+        cursor: pointer;
+    }
+    img {
+        width:20% ;
+    }
+    .image1{
+        text-align: center;
+        padding-top: 55px;
+    }
